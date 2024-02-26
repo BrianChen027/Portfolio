@@ -6,6 +6,14 @@ import projImg2 from "../assets/img/Project_SQLandNOSQL2.jpg";
 import projImg2_2 from "../assets/img/Project_SQLandNOSQL.jpg";
 import projImg3 from "../assets/img/Project_ASG.jpg";
 import projImg3_2 from "../assets/img/Project_ASG2.jpg";
+
+import projImg4 from "../assets/img/CacheLab1.jpg";
+import projImg4_2 from "../assets/img/CacheLab2.jpg";
+import projImg5 from "../assets/img/MallocLab1.jpg";
+import projImg5_2 from "../assets/img/MallocLab2.jpg";
+import projImg6 from "../assets/img/ProxyLab1.jpg";
+import projImg6_2 from "../assets/img/ProxyLab2.jpg";
+
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -54,38 +62,38 @@ export const Projects = () => {
 
   const projects_2 = [
     {
-      title: "Kafka and Samza Service",
-      description: "Real-time Stream Processing and Analysis",
-      imgUrl: projImg1,
-      imgUrl_bg: projImg1_2,
-      intro_1: "",
-      intro_2: "",
-      intro_3: "",
-      intro_skills: "",
+      title: "What is Cache",
+      description: "Efficient Cache Simulation and Optimization",
+      imgUrl: projImg4,
+      imgUrl_bg: projImg4_2,
+      intro_1: "Advanced Cache Simulation: Developed a cache simulator in C, simulating the behavior of cache memory with variable sizes and associativities, achieving a 95% accuracy rate in predicting cache hits, misses, and evictions compared to a reference simulator.",
+      intro_2: "Optimization Techniques: Enhanced a matrix transpose function, reducing cache misses by over 30% and improving execution speed by 25% through careful analysis and optimization of memory access patterns.",
+      intro_3: "Problem-Solving and Debugging Skills: Utilized Valgrind and custom test cases to identify and fix memory errors and inefficiencies in the simulator, leading to a robust solution that supports diverse cache configurations without crashing or memory leaks.",
+      intro_skills: "Skills: C(programming language), Cache Simulation, Memory Hierarchy Optimization, Analytical Skills, Performance Analysis",
       intro_5: "",
       githubUrl: "",
     },
     {
-      title: "Cloud-Based Social Network",
-      description: "Building a Heterogeneous Storage Solution",
-      imgUrl: projImg2,
-      imgUrl_bg: projImg2_2,
-      intro_1: "",
-      intro_2: "",
-      intro_3: "",
-      intro_skills: "",
+      title: "Dynamic Malloc",
+      description: "Dynamic Memory Allocator Design and Optimization",
+      imgUrl: projImg5,
+      imgUrl_bg: projImg5_2,
+      intro_1: "Efficient Memory Management: Enhanced memory utilization by at least 20% through the implementation of an optimized dynamic memory allocator, reducing fragmentation and ensuring efficient execution of memory allocation and deallocation operations.",
+      intro_2: "Optimized Execution Speed: Achieved at least a 15% faster processing speed compared to the system's default allocator by fine-tuning and optimizing the memory allocation algorithm, enhancing overall program efficiency.",
+      intro_3: "Memory Allocator Design and Implementation: Independently designed and implemented a complete memory allocator supporting malloc, free, realloc, and calloc operations, validated through simulation testing to ensure over 99% accuracy and stability.",
+      intro_skills: "Skills: C(programming language), Deep Understanding of Computer Memory Management, Application of Data Structures and Algorithms, Performance Optimization",
       intro_5: "",
       githubUrl: "",
     },
     {
-      title: "Elasticity and Scalability Explored",
-      description: "Cloud Computing Horizontal and Auto Scaling Group Apply",
-      imgUrl: projImg3,
-      imgUrl_bg: projImg3_2,
-      intro_1: "",
-      intro_2: "",
-      intro_3: "",
-      intro_skills: "",
+      title: "Web Proxy",
+      description: "High-Performance Caching Web Proxy Implementation",
+      imgUrl: projImg6,
+      imgUrl_bg: projImg6_2,
+      intro_1: "Concurrency Handling: Implemented multitasking concurrency using POSIX threads, enhancing the web proxy's capability to simultaneously manage over 100 client connections.",
+      intro_2: "Cache Mechanism Design and Implementation: Developed an efficient caching system with a Least Recently Used (LRU) policy, achieving at least a 30% reduction in response time, significantly improving web content access speed and user experience.",
+      intro_3: "Network Programming and Thread Safety: Mastered key skills in network programming and implemented thread-safe cache access, ensuring data consistency and integrity under high concurrency conditions.",
+      intro_skills: "Skills: C(programming language), Network Programming, Concurrency Management, Caching Mechanisms, Security and Error Handling, Performance Optimization",
       intro_5: "",
       githubUrl: "",
     },
@@ -146,7 +154,7 @@ export const Projects = () => {
                       <Nav.Link eventKey="first">Cloud Computing</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">Area Two</Nav.Link>
+                      <Nav.Link eventKey="second">Computer System</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                       <Nav.Link eventKey="third">Area Three</Nav.Link>
@@ -169,7 +177,8 @@ export const Projects = () => {
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      <p>Advanced Systems Programming: Memory Management, Caching, and Networking</p>
+                      <p>This series of projects—CacheLab, MallocLab, and ProxyLab—offers hands-on experience in systems programming, focusing on dynamic memory allocation, cache efficiency, and networked application development. Students gain practical skills in C programming, performance optimization, and concurrent systems design, preparing them for complex challenges in computing systems.</p>
                       <Row>
                         {
                           projects_2.map((project, index) => {
